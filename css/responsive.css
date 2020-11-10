@@ -1,0 +1,270 @@
+@media (min-width: 1400px) {
+    .container,
+    .main-header {
+        width: 1400px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .container {
+        width: 100%;
+    }
+
+    .main-header {
+        padding: 23px 70px;
+    }
+
+    .main-footer {
+        padding: 20px 70px;
+    }
+
+    .content .impact-box-section {
+        padding: 80px 70px 100px;
+    }
+
+    .content .thank-section {
+        padding: 100px 70px 0;
+    }
+
+    .thank-section > div {
+        padding-bottom: 120px;
+    }
+
+    .donate-section .donate-show {
+        padding: 76px 55px 60px;
+    }
+
+    .donate-section .choose-donation {
+        padding: 60px 70px;
+    }
+
+    .content .involve-section {
+        padding: 80px 70px 90px;
+    }
+
+    .content .event-section {
+        padding: 65px 55px 100px;
+    }
+
+    .content .faq-section {
+        padding: 65px 55px;
+    }
+
+    .content .faq-section > div {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .banner img.banner-back {
+        margin-top: 0;
+    }
+
+    .impact-box-section > h5 {
+        margin: 24px auto 0;
+    }
+
+    .impact-description .left-description,
+    .impact-description .right-description {
+        width: 220px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .main-header {
+        padding: 23px 20px;
+    }
+
+    .main-footer {
+        padding: 15px 30px;
+    }
+
+    .header-menu-item {
+        margin-left: 9px;
+    }
+
+    .banner img.banner-back {
+        margin-top: 60px;
+    }
+
+    .content .impact-box-section {
+        padding: 60px 20px 80px;
+    }
+
+    .impact-box-section .impact-description {
+        display: none;
+    }
+
+    .impact-box-section .impact-description.mobile-view {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .impact-description h6 {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .content .thank-section {
+        padding: 60px 20px 0;
+    }
+
+    .thank-section > div {
+        padding-bottom: 80px;
+    }
+
+    .thank-section .thank-note {
+        padding-left: 15px;
+    }
+
+    .donate-section .donate-show {
+        padding: 50px 20px 30px;
+    }
+
+    .donate-section .choose-donation {
+        padding: 50px 20px;
+    }
+
+    .content .involve-section {
+        padding: 50px 20px 60px;
+    }
+
+    .content .event-section {
+        padding: 50px 15px 70px;
+    }
+
+    .content .faq-section {
+        padding: 50px 20px;
+    }
+
+    .content .faq-section > div {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .main-header {
+        padding: 15px 10px;
+    }
+
+    .main-footer {
+        padding: 15px 25px;
+    }
+
+    .banner .banner-title {
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        padding: 0 20px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .content .impact-box-section {
+        padding: 40px 10px 60px;
+    }
+
+    .impact-box-section > h5 {
+        width: 100%;
+        margin: 24px 20px;
+    }
+
+    .content .thank-section {
+        padding: 50px 10px 0;
+    }
+
+    .thank-section > div {
+        display: block;
+        margin-top: 25px;
+        padding: 0 15px 10px;
+    }
+
+    .thank-section .thank-note {
+        padding: 25px 0;
+    }
+
+    .donate-section .donate-show {
+        padding: 30px 10px 20px;
+    }
+
+    .donate-section .donate-show > h5 {
+        width: 100%;
+        margin: 15px 10px;
+    }
+
+    .donate-section .choose-donation {
+        padding: 40px 10px;
+        display: block;
+    }
+
+    .choose-donation .note-section {
+        text-align: center;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+
+    .choose-donation .input-section {
+        width: 100%;
+    }
+
+    .content .involve-section {
+        padding: 50px 10px;
+    }
+
+    .content .involve-section > h5 {
+        width: 100%;
+        margin: 15px 10px 20px;
+    }
+
+    .donation-center-google-map {
+        margin: 0 30px 30px;
+    }
+
+    .content .event-section {
+        padding: 50px 10px 40px;
+    }
+
+    .event-board {
+        width: calc(50% - 30px);
+    }
+
+    .content .faq-section {
+        padding: 50px 10px;
+    }
+
+    .content .faq-section > div {
+        padding-top: 10px;
+    }
+
+    .faq-board {
+        margin-bottom: 10px;
+        width: calc(100% - 30px);
+    }
+}
+
+@media (max-width: 500px) {
+    .banner .banner-title {
+        height: 80px;
+    }
+
+    .banner .banner-title h4 {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .event-board {
+        width: calc(100% - 30px);
+    }
+}
