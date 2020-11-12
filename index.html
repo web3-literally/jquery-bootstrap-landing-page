@@ -17,8 +17,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script type="text/javascript"
-            src="http://maps.google.com/maps/api/js?key=AIzaSyBmofwXO4eBxqJY_GxcWJqoVtUnb4GtQAs&sensor=false&libraries=drawing,places"></script>
     <!-- /core JS files -->
 
     <link href="css/app.css" rel="stylesheet" type="text/css">
@@ -76,7 +74,7 @@
             </h5>
             <div class="impact-description">
                 <div class="center-image">
-                    <img src="assets/impact-box.png" alt="impact box"/>
+                    <img src="assets//impact-box-lines.png" width="550" alt="impact box"/>
                 </div>
                 <div class="left-description">
                     <h6>For every tree used to make our Impact Boxes, 20 trees were planted in partnership with Eden
@@ -127,19 +125,28 @@
         <div class="thank-section" id="thank-you">
             <h2>Send a Thank You Note</h2>
             <div class="d-flex">
-                <div class="thank-video">
-                    <img src="assets/thank.png" alt="thank video"/>
-                    <img src="assets/play.svg" alt="video play"/>
-                </div>
+                <a data-toggle="modal" class="video-btn"
+                   data-src="https://player.vimeo.com/video/477797752" data-target="#myModal">
+                    <div class="thank-video">
+
+                        <img src="assets/thank.png" alt="thank video"/>
+                        <img src="assets/play.svg" alt="video play"/>
+
+                    </div>
+                </a>
                 <div class="thank-note">
-                    <h5>Our Impact Boxes were assembled with love at Goodwill Southern California through a program
-                        empowering individuals with barriers to employment to have dignified work, purpose, and pride in
-                        what they do. We encourage you to take a moment to share a note of gratitude to the team at
-                        Goodwill for their hard work putting together the boxes.</h5>
-                    <textarea placeholder="Share a note of gratitude here..." rows="3"></textarea>
-                    <button type="button">SEND NOTE</button>
-                    <h6>Snap will make sure your message gets to the Goodwill staff who assembled our Impact
-                        Boxes. </h6>
+                    <form name="thank-note-form">
+                        <h5>Our Impact Boxes were assembled with love at Goodwill Southern California through a program
+                            empowering individuals with barriers to employment to have dignified work, purpose, and
+                            pride in
+                            what they do. We encourage you to take a moment to share a note of gratitude to the team at
+                            Goodwill for their hard work putting together the boxes.</h5>
+                        <textarea name="Thank you Note" placeholder="Share a note of gratitude here..."
+                                  rows="3"></textarea>
+                        <button type="submit" id="submit-thank-note">SEND NOTE</button>
+                        <h6>Snap will make sure your message gets to the Goodwill staff who assembled our Impact
+                            Boxes. </h6>
+                    </form>
                 </div>
             </div>
         </div>
@@ -159,15 +166,18 @@
                             <h3>Vitamin Angels</h3>
                             <h5>Give one year of lifesaving vitamin A to a child in need</h5>
                             <div class="donate-slide">
-                                <img src="assets/donate-1.png"/>
-                                <img src="assets/donate-2.png"/>
-                                <img src="assets/donate-3.png"/>
-                                <img src="assets/donate-4.png"/>
+                                <img src="assets/vitamin-angels-1.png"/>
+                                <img src="assets/vitamin-angels-2.png"/>
+                                <img src="assets/vitamin-angels-3.png"/>
                             </div>
-                            <span class="description">150 million children don’t get the Vitamin A they need. Our bodies rely on vitamin A for many purposes, all of which are essential for day-to-day activities and long-term health. When a child lacks this nutrient during the early stages of development, they can get sick, experience stunted growth, go blind and even die. Families with children in developing countries who are struggling with food insecurity are most at risk, because purchasing or growing vitamin A-rich foods isn’t always possible.</span>
-                            <span class="learn-more">
-                                LEARN MORE
+                            <span class="description">
+                                <p>150 million children don’t get the Vitamin A they need. Our bodies rely on vitamin A for many purposes, all of which are essential for day-to-day activities and long-term health. When a child lacks this nutrient during the early stages of development, they can get sick, experience stunted growth, go blind and even die. Families with children in developing countries who are struggling with food insecurity are most at risk, because purchasing or growing vitamin A-rich foods isn’t always possible.</p>
+                                <p>Your donation today gives vitamin A to a child in need for one year through the nonprofit Vitamin Angels. Operating in 70 countries around the world, Vitamin Angels seeks out the most vulnerable, and too often forgotten: pregnant women, infants, and children who live beyond the margins.</p>
                             </span>
+                            <button type="button" class="btn learn-more video-btn" data-toggle="modal"
+                                    data-src="https://player.vimeo.com/video/280242427" data-target="#myModal">
+                                LEARN MORE
+                            </button>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -175,17 +185,18 @@
                             <h3>Feed the Children</h3>
                             <h5>Provide a nutritious meal to a child in need</h5>
                             <div class="donate-slide">
-                                <img src="assets/donate-2.png"/>
-                                <img src="assets/donate-3.png"/>
-                                <img src="assets/donate-1.png"/>
-                                <img src="assets/donate-4.png"/>
+                                <img src="assets/feed-the-children-1.png"/>
+                                <img src="assets/feed-the-children-2.png"/>
+                                <img src="assets/feed-the-children-3.png"/>
                             </div>
                             <span class="description">
-                                Hunger is a global problem and Feed the Children operates in countries around the world where they can make the biggest impact. Internationally, Feed the Children implements a Child-Focused Community Development (CFCD) approach, which includes program activities in the areas of food and nutrition, health and water, education, and livelihoods. The organization works with vulnerable and at-risk children, their caregivers, and communities to cultivate the social, economic, cultural, and environmental conditions needed for families to thrive.
+                                <p>Hunger is a global problem and Feed the Children operates in countries around the world where they can make the biggest impact. Internationally, Feed the Children implements a Child-Focused Community Development (CFCD) approach, which includes program activities in the areas of food and nutrition, health and water, education, and livelihoods. The organization works with vulnerable and at-risk children, their caregivers, and communities to cultivate the social, economic, cultural, and environmental conditions needed for families to thrive.</p>
+                                <p>Your donation today provides a child in need with a nutritious meal. Through Feed The Children, students experiencing homelessness are enrolled in a nutrition program and provided a sustainable source of nutritious foods so they can focus on.</p>
                             </span>
-                            <span class="learn-more">
+                            <a class="learn-more" href="https://www.feedthechildren.org/" target="_blank">
                                 LEARN MORE
-                            </span>
+                            </a>
+
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -193,17 +204,18 @@
                             <h3>Baby2Baby</h3>
                             <h5>Provide a day’s worth of diapers to a baby in poverty</h5>
                             <div class="donate-slide">
-                                <img src="assets/donate-3.png"/>
-                                <img src="assets/donate-4.png"/>
-                                <img src="assets/donate-1.png"/>
-                                <img src="assets/donate-2.png"/>
+                                <img src="assets/baby2baby-1.png"/>
+                                <img src="assets/baby2baby-2.png"/>
+                                <img src="assets/baby2baby-3.png"/>
                             </div>
                             <span class="description">
-                                Baby2Baby is a non-profit organization that provides children living in poverty, ages 0-12 years, with diapers, clothing and all the basic necessities that every child deserves. Children living in poverty are the most vulnerable in any crisis, and COVID-19 is no exception. 1 in 3 families in this country were already choosing between diapers and food before the pandemic, and now the families that Baby2Baby serves are struggling even more due to months of lost income, millions of lost jobs and increased lack of access to these critical items.
+                                <p>Baby2Baby is a non-profit organization that provides children living in poverty, ages 0-12 years, with diapers, clothing and all the basic necessities that every child deserves. Children living in poverty are the most vulnerable in any crisis, and COVID-19 is no exception. 1 in 3 families in this country were already choosing between diapers and food before the pandemic, and now the families that Baby2Baby serves are struggling even more due to months of lost income, millions of lost jobs and increased lack of access to these critical items.</p>
+                                <p>When Baby2Baby can provide these critical items, families can use their extremely limited funds to focus on food and shelter. The need is growing every day, and your support will help them to continue providing children with the items they need to survive during this unprecedented time.</p>
                             </span>
-                            <span class="learn-more">
+                            <button type="button" class="btn learn-more video-btn" data-toggle="modal"
+                                    data-src="https://player.vimeo.com/video/477435232" data-target="#myModal">
                                 LEARN MORE
-                            </span>
+                            </button>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -211,99 +223,256 @@
                             <h3>Doctors Without Borders</h3>
                             <h5>Enable medical care for an individual battling COVID-19</h5>
                             <div class="donate-slide">
-                                <img src="assets/donate-4.png"/>
-                                <img src="assets/donate-3.png"/>
-                                <img src="assets/donate-2.png"/>
-                                <img src="assets/donate-1.png"/>
+                                <img src="assets/medecine-1.png"/>
+                                <img src="assets/medecine-2.png"/>
+                                <img src="assets/medecine-3.png"/>
                             </div>
                             <span class="description">
-                                In the face of the unprecedented global crisis of the coronavirus pandemic, MSF has created the COVID-19 Crisis Fund. The fund aims to raise urgently-needed money for their global emergency response to the new coronavirus pandemic and its consequences. The objectives of their global response to COVID-19 are to: slow down and stop or delay transmission of the virus and provide care for patients (particularly the seriously ill). Your donation will enable our urgently-needed medical care and support to be set up or continued in more than 70 countries.
+                                <p>In the face of the unprecedented global crisis of the coronavirus pandemic, Doctors Without Borders has created the COVID-19 Crisis Fund. The fund aims to raise urgently-needed money for their global emergency response to the new coronavirus pandemic and its consequences.</p>
+                                <p>The objectives of their global response to COVID-19 are to: slow down and stop or delay transmission of the virus and provide care for patients (particularly the seriously ill); minimize the impact on health systems and communities; disseminate information on forms of infection prevention and risks; enhance water, hygiene and sanitation supplies and activities; and provide palliative care for the most seriously ill patients in countries with limited resources.</p>
+                                <p>Your donation will enable urgently-needed medical care and support to be set up or continued in more than 70 countries.</p>
                             </span>
-                            <span class="learn-more">
+                            <button type="button" class="btn learn-more video-btn" data-toggle="modal"
+                                    data-src="https://www.youtube.com/embed/LLPvzieC7rw" data-target="#myModal">
                                 LEARN MORE
-                            </span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="choose-donation">
                 <div class="note-section">
-                    <img src="assets/day-in-final-logo.png"/>
+                    <img src="assets/SnapDayIn_Snapcode_FINAL.png"/>
                     <h2>Choose Your Donation</h2>
                     <h4>Please tell us which donation you'd like Snap to make in your honor today.</h4>
+                    <h4 style="margin-top: 5px;">One submission per team member.<br>
+                        A valid Snap email address is required for submission.</h4>
                 </div>
-                <div class="input-section">
-                    <select>
-                        <option>Choose Donation</option>
-                        <option value="1">Vitamin Angels</option>
-                        <option value="2">Feed the Children</option>
-                        <option value="3">Baby2Baby</option>
-                        <option value="4">Doctors Without Borders</option>
-                    </select>
-                    <input type="text" placeholder="First Name"/>
-                    <input type="text" placeholder="Last Name"/>
-                    <input type="email" placeholder="Email Address"/>
-                    <button type="button">SUBMIT</button>
-                </div>
+                <form name="donation-form">
+                    <div class="input-section">
+                        <select name="Donation Choice">
+                            <option>Choose Donation</option>
+                            <option value="Vitamin Angels">Vitamin Angels</option>
+                            <option value="Feed the Children">Feed the Children</option>
+                            <option value="Baby2Baby">Baby2Baby</option>
+                            <option value="Doctors Without Borders">Doctors Without Borders</option>
+                        </select>
+                        <input type="text" placeholder="First Name" name="First Name"/>
+                        <input type="text" placeholder="Last Name" name="Last Name"/>
+                        <input type="email" placeholder="Email Address" name="Email"/>
+                        <button type="submit" id="submit-donation">SUBMIT</button>
+                    </div>
+                </form>
             </div>
         </div>
 
         <div class="involve-section" id="involve">
             <h2>Get Involved</h2>
-            <h5>Below is a list of clothing donation centers. If you don’t see one located near you, we suggest calling
-                local non-profit organizations in your area. Hours of operation and policies have changed due to
-                COVID-19 so make sure they are accepting donations prior to drop off. <b>Please note that donating
-                    clothing
-                    is entirely voluntary, and that we only encourage you to participate in this activity if you feel
-                    safe
-                    and comfortable doing so.</b></h5>
-            <div id="map" class="donation-center-google-map"></div>
+            <h5>Below is a list of clothing donation centers recommended from our team members around the world. While
+                these are incredible suggestions, please feel free to donate to any organization of your choice that is
+                accepting gently-used clothing donations. Please note that due to COVID-19, hours of operation and
+                policies are ever-changing. Therefore, please reach out to the nonprofit in advance to confirm they are
+                accepting donations prior to drop off. If you are unable to drop off the donations today, please do so
+                at a time in the future when you feel comfortable. <b>As a reminder, donating clothing is entirely
+                    voluntary, and we only encourage you to participate in this activity if you feel safe and
+                    comfortable doing so. </b></h5>
+            <div class="donation-center-google-map">
+                <img src="assets/donation-map.png" alt="donation map"/>
+            </div>
             <div class="tab-board">
                 <div class="tab-header">
-                    <span class="tab-item active">North America</span>
-                    <span class="tab-item">Asia Pacific</span>
-                    <span class="tab-item">Europe & Middle East</span>
+                    <span class="tab-item active" place="north-america">North America</span>
+                    <span class="tab-item" place="europe-middle-east">Asia Pacific</span>
+                    <span class="tab-item" place="asia-pacific">Europe & Middle East</span>
                 </div>
-                <div class="tab-content">
-                    <div class="col-md-4">
+                <div class="tab-content north-america">
+                    <div class="col-md-6 col-xs-12">
                         <div class="donation-center">
                             <span class="header">Atlanta</span>
-                            <h5 class="item">Ansley Donation Center</h5>
+                            <h5 class="item"><a href="https://goodwillng.org/locations/ansley-donation-center-30324/"
+                                                target="_blank">Ansley Donation Center</a></h5>
                         </div>
                         <div class="donation-center">
                             <span class="header">Boulder</span>
-                            <h5 class="item">Sister Carmen</h5>
+                            <h5 class="item"><a href="https://sistercarmen.org/" target="_blank">Sister Carmen</a></h5>
                         </div>
-                        <div class="donation-center">
-                            <span class="header">Boulder</span>
-                            <h5 class="item">Sister Carmen</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
                         <div class="donation-center">
                             <span class="header">Chicago</span>
-                            <h5 class="item">YWCA Shop For Good</h5>
-                            <h5 class="item">Cradles to Crayons</h5>
-                            <h5 class="item">Goodwill</h5>
-                            <h5 class="item">Lambs Farm- Cedar Chest Thrift Shop</h5>
-                        </div>
-                        <div class="donation-center">
-                            <span class="header">Dallas</span>
-                            <h5 class="item">Goodwill</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="donation-center">
-                            <span class="header">DC</span>
-                            <h5 class="item">Martha's Table</h5>
+                            <h5 class="item"><a href="https://www.cradlestocrayons.org/chicago/" target="_blank">Cradles
+                                to Crayons</a></h5>
+                            <h5 class="item"><a href="https://www.amazinggoodwill.com/" target="_blank">Goodwill</a>
+                            </h5>
+                            <h5 class="item"><a
+                                    href="https://lambsfarm.org/business-attractions/cedar-chest-thrift-shop/"
+                                    target="_blank">Lambs Farm- Cedar Chest Thrift Shop</a></h5>
+                            <h5 class="item"><a href="https://satruck.org/DropOff/Index?zip=60647" target="_blank">The
+                                Salvation Army</a></h5>
+                            <h5 class="item"><a href="https://www.ywca-ens.org/what-we-do/shop/" target="_blank">YWCA
+                                Shop For Good</a></h5>
+                            <h5 class="item"><a href="https://childrens-place.org/" target="_blank">Children's Place
+                                Association</a></h5>
                         </div>
                         <div class="donation-center">
                             <span class="header">Detroit</span>
-                            <h5 class="item">Salvation Army Thrift Store</h5>
+                            <h5 class="item"><a href="https://satruck.org/" target="_blank">Salvation Army Thrift
+                                Store</a></h5>
                         </div>
                         <div class="donation-center">
-                            <span class="header">Los Angeles</span>
-                            <h5 class="item">Goodwill SoCal</h5>
+                            <span class="header">Los Angeles (Santa Monica + Venice)</span>
+                            <h5 class="item"><a href="https://www.goodwillsocal.org/donate/donation-center-locator/"
+                                                target="_blank">Goodwill SoCal</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Lehi</span>
+                            <h5 class="item"><a href="https://www.deseretindustries.org/locations" target="_blank">Desert
+                                Industries </a></h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="donation-center">
+                            <span class="header">Mountain View</span>
+                            <h5 class="item"><a
+                                    href="https://cityteam.org/san-jose/?mwm_id=434232243982&gclid=Cj0KCQjw28T8BRDbARIsAEOMBczJai0Wq3Mok-J9LOz_SQz23RPSyCxd0CWOAuORF_yN0hHr3kNXmuQaAqZeEALw_wcB"
+                                    target="_blank">CityTeam San Jose</a></h5>
+                            <h5 class="item"><a href="https://www.dayworkercentermv.org/" target="_blank">Day Worker
+                                Center of Mountain View</a></h5>
+                            <h5 class="item"><a href="http://www.hopes-corner.org/" target="_blank">Hope's Corner</a>
+                            </h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">New York</span>
+                            <h5 class="item"><a href="https://www.goodwill.org/" target="_blank">Goodwill</a></h5>
+                            <h5 class="item"><a href="https://www.thredup.com/cleanout" target="_blank">Thread Up</a>
+                            </h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">San Francisco</span>
+                            <h5 class="item"><a href="https://www.communitythriftsf.org/" target="_blank">Community
+                                Thrift</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Seattle</span>
+                            <h5 class="item"><a href="https://www.marysplaceseattle.org/" target="_blank">Mary's
+                                Place</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Toronto</span>
+                            <h5 class="item"><a href="http://donationtown.org/ontario-donation-pickup/" target="_blank">Donation
+                                Town</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Washington D.C.</span>
+                            <h5 class="item"><a href="https://marthastable.org/" target="_blank">Martha's Table</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content asia-pacific">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="donation-center">
+                            <span class="header">Dubai</span>
+                            <h5 class="item"><a href="http://beitalkhair.org/en/" target="_blank">Malabes donation app
+                                (via Beit Al Khair)</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Hamburg</span>
+                            <h5 class="item"><a href="https://www.hanseatic-help.org/" target="_blank">Hanseatic Help
+                                e.V.</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Kfar Yehoshua</span>
+                            <h5 class="item"><a href="http://www.friendsofahavavillage.com/about/" target="_blank">Friends
+                                of Ahava Village</a></h5>
+                            <h5 class="item"><a href="https://www.pitchonlev.org.il/" target="_blank">Pitchon-Lev </a>
+                            </h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Kiev</span>
+                            <h5 class="item"><a href="https://www.okko.ua/" target="_blank">OKKO gas stations</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">London</span>
+                            <h5 class="item"><a href="https://www.traid.org.uk/" target="_blank">Traid</a></h5>
+                            <h5 class="item"><a href="https://www.vineyardcommunity.org/" target="_blank">Vineyard
+                                Community Shop</a></h5>
+                            <h5 class="item"><a
+                                    href="https://www.crisis.org.uk/?gclid=Cj0KCQjw28T8BRDbARIsAEOMBcz__Dy9JsqBCnGTmBwL61Bf4Zz1ID3_Co7ESr9P6YepcMnAPbANyxIaAuzLEALw_wcB"
+                                    target="_blank">Museum of Homelessness</a></h5>
+                            <h5 class="item"><a href="https://www.streetskitchen.org/" target="_blank">Streets
+                                Kitchen</a></h5>
+                        </div>
+                        <!--
+                        <div class="donation-center">
+                            <span class="header">Mumbai</span>
+                            <h5 class="item"><a href="" target="_blank">Brothers for All</a></h5>
+                            <h5 class="item"><a href="" target="_blank">Jan Sahas</a></h5>
+                        </div>
+                        -->
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="donation-center">
+                            <span class="header">Odessa</span>
+                            <h5 class="item"><a href="https://www.facebook.com/Rechidopomogaut/" target="_blank">Rechidopomogaut</a>
+                            </h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Oslo</span>
+                            <h5 class="item"><a
+                                    href="https://frelsesarmeen.no/lokalavdeling/oslo?gclid=Cj0KCQjw28T8BRDbARIsAEOMBcxkEN6Ulz6-E6zZkOFyOyHUr7cVZ8TlPO6hDl_SaSGFYl-JNDVx4OEaAuXvEALw_wcB"
+                                    target="_blank">Frelsesarmeen</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Paris</span>
+                            <h5 class="item"><a href="https://www.croix-rouge.fr/Je-donne/don-vetements"
+                                                target="_blank">CROIX-ROUGE FRANÇAISE</a></h5>
+                            <h5 class="item"><a href="https://jemengage.paris.fr/#search-wrapper" target="_blank">Mairie
+                                de Paris</a></h5>
+                            <h5 class="item"><a href="http://lerelais.org/oudonner.php" target="_blank">Le Relais</a>
+                            </h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Stockholm</span>
+                            <h5 class="item"><a href="https://www.stadsmissionen.se/" target="_blank">Stockholms
+                                Stadsmission</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Tel Aviv</span>
+                            <h5 class="item"><a href="https://shanti.org.il/en/" target="_blank">Beit Hashanti</a></h5>
+                            <h5 class="item"><a
+                                    href="https://www.israelgives.org/amuta/580328839?aff=25023337-d234-4d2d-a68d-5cc39bfc5f5d&gclid=Cj0KCQjw28T8BRDbARIsAEOMBcxJTe3BZLtFJqeRF82v3hArGzLtr3b-y_QlfWZ1GdlsYW3y3O0mbQwaAi7OEALw_wcB"
+                                    target="_blank">Pitchon Lev</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Yverdon-les-Bains</span>
+                            <h5 class="item"><a href="https://www.texaid.ch/en/media-press/news/details/337.html"
+                                                target="_blank">Tex-Aid</a></h5>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-content europe-middle-east">
+                    <div class="col-md-12">
+                        <div class="donation-center">
+                            <span class="header">Shenzhen</span>
+                            <h5 class="item"><a href="http://www.ccafc.org.cn/index.aspx" target="_blank">Bethel
+                                China</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Brisbane</span>
+                            <h5 class="item"><a href="https://www.suitedtosuccess.org/" target="_blank">Suited to
+                                Success</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Vienna</span>
+                            <h5 class="item"><a href="https://www.caritas.at/" target="_blank">Caritas & Du</a></h5>
+                            <h5 class="item"><a href="https://www.fraubock.at/" target="_blank">Verein Ute Bock</a></h5>
+                        </div>
+                        <div class="donation-center">
+                            <span class="header">Sydney</span>
+                            <h5 class="item"><a href="https://www.salvationarmy.org.au/" target="_blank">The Salvation
+                                Army</a></h5>
+                            <h5 class="item"><a
+                                    href="https://www.wesleymission.org.au/news-and-publications/latest-news/wesley-mission-news/clean-out-your-wardrobe-and-help-someone-in-need/?gclid=Cj0KCQjwk8b7BRCaARIsAARRTL60DXEZROJXIWbIIuDwcK6VSLa7XORujFkGDzknGeTRrrD44GiF46YaAkopEALw_wcB"
+                                    target="_blank">Wesley Mission</a></h5>
                         </div>
                     </div>
                 </div>
@@ -320,7 +489,7 @@
                     </div>
                     <div class="event-note">
                         <h3>Asia Pacific</h3>
-                        <span>JOIN</span>
+                        <span><a href="https://hopin.to/events/snap-day-in-asia-pacific" target="_blank">JOIN</a></span>
                     </div>
                 </div>
                 <div class="event-board">
@@ -328,8 +497,9 @@
                         <img src="assets/event-2.svg"/>
                     </div>
                     <div class="event-note">
-                        <h3>Middle East</h3>
-                        <span>JOIN</span>
+                        <h3>EMEA</h3>
+                        <span><a href="https://hopin.to/events/snap-day-in-europe-middleeast"
+                                 target="_blank">JOIN</a></span>
                     </div>
                 </div>
                 <div class="event-board">
@@ -338,7 +508,8 @@
                     </div>
                     <div class="event-note">
                         <h3>North America</h3>
-                        <span>JOIN</span>
+                        <span><a href="https://hopin.to/events/snap-day-in-north-america"
+                                 target="_blank">JOIN</a></span>
                     </div>
                 </div>
                 <div class="event-board">
@@ -347,7 +518,7 @@
                     </div>
                     <div class="event-note">
                         <h3>Dubai</h3>
-                        <span>JOIN</span>
+                        <span><a href="https://hopin.to/events/snap-day-in-dubai" target="_blank">JOIN</a></span>
                     </div>
                 </div>
             </div>
@@ -356,32 +527,180 @@
         <div class="faq-section" id="faq">
             <h2>Frequently Asked Questions</h2>
             <div class="d-flex">
-                <div class="faq-board">
-                    <h3>What is Snap Day In?</h3>
-                    <h5 style="margin-top: 24px;">
-                        Formerly known as Snap CAMP Day Out, Snap Day In is our annual global day of service on World
-                        Kindness Day! On this day, Snap team members across the world have the option to dedicate a
-                        portion of the workday to participating in at-home volunteer projects planned by Snap
-                        Philanthropy.
-                    </h5>
+                <div class="faq-column">
+                    <div class="faq-board">
+                        <div class="faq-title">What is Snap Day In?</div>
+                        <div class="faq-content">
+                            <p>Formerly known as Snap CAMP Day Out, Snap Day In is our annual global day of service on
+                                World
+                                Kindness Day! On this day, Snap team members across the world have the option to
+                                dedicate a
+                                portion of the workday to participating in at-home volunteer projects planned by Snap
+                                Philanthropy.</p>
+                            <p>The goals of Snap Day In are as follows:
+                            <ul>
+                                <li>Empower our Snap family across all office
+                                    locations to make a difference, while
+                                    winning from home
+                                </li>
+                                <li>Do our part to spread kindness and
+                                    positivity in our local communities
+                                </li>
+                                <li>Organize a variety of service
+                                    opportunities supporting nonprofits
+                                    focused on youth, education, and arts
+                                </li>
+                                <li>Rally the team around a meaningful and
+                                    fun day of service that creates a shared
+                                    experience, despite not being able to be
+                                    together in person
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-board">
+                        <div class="faq-title">In what others ways does Snap give back?</div>
+                        <div class="faq-content">
+                            <p>Snap spreads positivity and kindness in the world
+                                by giving back. We care deeply about being a
+                                good neighbor and thoughtfully consider how we
+                                can make the greatest impact by bringing
+                                together our Snap family with our local
+                                communities. Snap does more than write checks.
+                                We strengthen and promote the well-being of the
+                                neighborhoods where we work through
+                                volunteering and engaging in partnerships with
+                                nonprofits focusing on our three philanthropic
+                                pillars — youth, education and the arts. To learn
+                                more about the ways in which Snap makes an
+                                impact, please visit
+                                <a href="https://citizen.snap.com/giving"
+                                   target="_blank">https://citizen.snap.com/giving</a>.</p>
+                        </div>
+                    </div>
+                    <div class="faq-board">
+                        <div class="faq-title">I did not sign up to receive an Impact Box. How
+                            can I participate in today’s event?
+                        </div>
+                        <div class="faq-content">
+                            <p>All instructions will be explained during the virtual
+                                event on Hopin, so please join us!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-board">
-                    <h3>How is Snap Day In organized?</h3>
-                    <h5 style="margin-top: 24px;">
-                        Today’s virtual event will consist of a series of online activities that we will complete
-                        together through this custom landing page, as well as the Kindness Quest, a curated menu of
-                        meaningful options empowering us to make a difference in our own communities and in the lives of
-                        people we care about. All opportunities are optional.
-                    </h5>
+                <div class="faq-column">
+                    <div class="faq-board">
+                        <div class="faq-title">How is Snap Day In organized?</div>
+                        <div class="faq-content">
+                            <p>Today’s virtual event will consist of a series of
+                                online activities that we will complete together
+                                through this custom landing page, as well as the
+                                Kindness Quest, a curated menu of meaningful
+                                options empowering us to make a difference in
+                                our own communities and in the lives of people
+                                we care about. All opportunities are optional.</p>
+                            <p>To accommodate team members across the
+                                country, Snap Philanthropy has provided four
+                                separate virtual event links based upon region.</p>
+                            <p>On November 13, start times are as follows:
+                            <ul>
+                                <li>North America: 10 a.m. PST</li>
+                                <li>Europe &amp; Middle East: 10 a.m. GMT</li>
+                                <li>Asia Pacific: 12 p.m. AEST</li>
+                            </ul>
+                            </p>
+                            <p>On November 12, the start time is:
+                            <ul>
+                                <li>Dubai: 1:30 p.m. GST</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-board">
+                        <div class="faq-title">Who is Gifts for Good?</div>
+                        <div class="faq-content">
+                            <p>Gifts for Good is the first corporate gifting
+                                company focused solely on social impact. Each
+                                gift on their site supports over 50 different
+                                nonprofits and social enterprises affecting change
+                                in 65 countries around the globe.</p>
+                        </div>
+                    </div>
+                    <div class="faq-board">
+                        <div class="faq-title">Can I post on Snapchat about the project?</div>
+                        <div class="faq-content">
+                            <p>Absolutely! We are distributing a Geofilter today
+                                and encourage you to use it :)</p>
+                            <p>Friendly reminder that this is a Filter, not Lens. Simply take a Snap and swipe through
+                                the Filters until you find it :)
+                            </p>
+                            <p><img style="max-width:175px;" src="assets/SnapDayIn_Snapcode_FINAL.png"/></p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="main-footer">
+                        <span>Copyright © 2020. Designed by <a
+                                href="https://giftsforgood.com">Gifts for Good.</a></span>
+            <img src="assets/heart.svg"/>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
 
-    <div class="main-footer">
-        <span>Copyright © 2020. Designed by <a href="https://giftsforgood.com">Gifts for Good.</a></span>
-        <img src="assets/heart.svg"/>
+    <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <label for="password-input"><h4>Please input password</h4></label>
+                    <input class="form-control" type="password" id="password-input"/>
+                    <button class="ok-btn" type="button" id="password-confirm-btn">Okay</button>
+                </div>
+
+            </div>
+        </div>
     </div>
+
+    <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="mb-10">Thank you</h3>
+                    <h5 id="message-content"></h5>
+                    <button class="ok-btn" type="button" data-dismiss="modal">Okay</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <script src="js/app.js"></script>

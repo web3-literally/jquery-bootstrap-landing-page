@@ -104,7 +104,7 @@ h6 {
 
 .mobile-menu img {
     width: 40px;
-    height: auto;
+    height: 40px;
     margin-left: auto;
 }
 
@@ -431,6 +431,18 @@ h6 {
     line-height: 18px;
     letter-spacing: 1px;
     font-weight: 600;
+    cursor: pointer;
+    background: none;
+    box-shadow: none;
+    color: black;
+}
+
+.donate-content .donate-item .learn-more:active,
+.donate-content .donate-item .learn-more:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    color: black;
 }
 
 .donate-section .choose-donation {
@@ -445,8 +457,8 @@ h6 {
 }
 
 .choose-donation .note-section img {
-    border: 0.75px solid #000000;
-    border-radius: 20px;
+    border-radius: 0;
+    width: 64px;
 }
 
 .choose-donation .note-section h2 {
@@ -501,6 +513,27 @@ h6 {
     margin-top: 16px;
 }
 
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+.close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 999;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    opacity: 1;
+}
+
 /* /donate section */
 
 /* Involve section */
@@ -516,7 +549,11 @@ h6 {
 
 .donation-center-google-map {
     margin: 0 100px 64px;
-    height: 460px;
+}
+
+.donation-center-google-map img {
+    width: 100%;
+    height: auto;
 }
 
 .tab-header {
@@ -534,6 +571,7 @@ h6 {
     margin-right: 30px;
     width: 160px;
     padding-bottom: 13px;
+    cursor: pointer;
 }
 
 .tab-header .tab-item.active {
@@ -622,18 +660,99 @@ h6 {
 }
 
 .content .faq-section > div {
-    padding-top: 120px;
+    padding-top: 60px;
     flex-wrap: wrap;
 }
 
-.faq-board {
+.faq-column {
     margin-left: 15px;
     margin-right: 15px;
+    width: calc(50% - 30px);
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-board {
     border-radius: 32px;
     padding: 48px 40px;
     background: #f4f4f4;
     text-align: left;
-    width: calc(50% - 30px);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.faq-board .faq-title {
+    padding-right: 30px;
+    position: relative;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.faq-board .faq-title:after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 35px;
+}
+
+.faq-board.opened .faq-title:after {
+    content: '—';
+}
+
+.faq-board.opened .faq-content {
+    display: block;
+}
+
+.faq-board .faq-content {
+    display: none;
+    margin-top: 30px;
 }
 
 /* /faq section */
+
+/* Password modal */
+#passwordModal .modal-content,
+#messageModal .modal-content {
+    border-radius: 14px;
+}
+
+#passwordModal .modal-body,
+#messageModal .modal-body {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 25px 20px;
+}
+
+.modal-body #password-input {
+    padding: 20px 10px;
+    margin-top: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.modal-body button.ok-btn {
+    background: #FFFC00;
+    border-radius: 40px;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    width: 320px;
+    padding: 14px;
+    margin: 16px auto 0;
+    border: none;
+}
+
+.modal-body button.ok-btn:active,
+.modal-body button.ok-btn:focus {
+    outline: none;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+/* /password modal */

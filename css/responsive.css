@@ -1,3 +1,6 @@
+.mobile-only {
+    display:none;
+}
 @media (min-width: 1400px) {
     .container,
     .main-header {
@@ -144,6 +147,13 @@
 }
 
 @media (max-width: 767px) {
+    
+    .desktop-only {
+        display:none;
+    }
+    .mobile-only {
+        display:block;
+    }
     .header-menu {
         display: none;
     }
@@ -177,7 +187,7 @@
 
     .impact-box-section > h5 {
         width: 100%;
-        margin: 24px 20px;
+        margin: 24px auto;
     }
 
     .content .thank-section {
@@ -200,7 +210,7 @@
 
     .donate-section .donate-show > h5 {
         width: 100%;
-        margin: 15px 10px;
+        margin: 15px auto;
     }
 
     .donate-section .choose-donation {
@@ -224,7 +234,7 @@
 
     .content .involve-section > h5 {
         width: 100%;
-        margin: 15px 10px 20px;
+        margin: 15px auto 20px;
     }
 
     .donation-center-google-map {
@@ -247,9 +257,12 @@
         padding-top: 10px;
     }
 
-    .faq-board {
-        margin-bottom: 10px;
+    .faq-column {
         width: calc(100% - 30px);
+    }
+
+    .tab-content .donation-center {
+        margin-top: 15px;
     }
 }
 
@@ -261,6 +274,20 @@
     .banner .banner-title h4 {
         display: none;
     }
+
+    .donate-content .donate-item {
+        padding: 20px 16px;
+    }
+
+    .faq-board {
+        padding: 25px 20px;
+        border-radius: 17px;
+    }
+
+    .tab-content {
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (max-width: 400px) {
